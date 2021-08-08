@@ -16,12 +16,12 @@ end
 
 class Mammal
     def initialize
-            puts "I am alive"
+        puts "I am alive"
         self
     end
 
     def breath  
-            puts "Inhale and exhale"
+        puts "Inhale and exhale"
         self
     end
     
