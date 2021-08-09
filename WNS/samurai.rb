@@ -1,10 +1,12 @@
 require_relative 'human'
 class Samurai < Human
+    @@count = 0
 
     def initialize
         puts "SAMURAI SPAWN"
         super
         @health = 200
+        @@count += 1
         # self
     end
 
@@ -21,6 +23,7 @@ class Samurai < Human
     end
 
     def how_many
+        @@count
     end
 end
 
@@ -30,3 +33,4 @@ puts sam.death_blow(sam)
 puts sam.display_stats
 puts sam.meditate
 puts sam.display_stats
+puts sam.how_many
